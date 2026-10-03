@@ -14,7 +14,7 @@ Serve the site directory over HTTP:
 python3 -m http.server 8080 --directory site
 ```
 
-Open http://localhost:8080. No build step or backend is required. The SDK and runtimes use a pinned import map; downloads occur on first inference. Microphone capture requires localhost or HTTPS. SDK usage telemetry contains no input or output content.
+Open http://localhost:8080. No build step or backend is required. Original model weights and the pinned LiteRT runtime download on first inference. This independent browser pipeline does not use the native Align SDK or send usage telemetry.
 
 ## Deployment
 
